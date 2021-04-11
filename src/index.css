@@ -11,3 +11,20 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.App-header {
+  background-color: tomato;
+  height: 50px;
+  line-height: 30px;
+  padding: 8px 20px;
+  color: white;
+  font-weight: bold;
+  font-size: 22px;
+  position: relative;
+}
+
+.action-buttons {
+  position: absolute;
+  right: 20px;
+  top: 8px;
+}
