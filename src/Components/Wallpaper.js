@@ -19,7 +19,7 @@ class Wallpaper extends Component {
         const cityName = event.target.selectedOptions[0].value;
         axios({
             method: 'GET',
-            url: `http://localhost:4050/api/getRestaurantsByLocation/${cityName}`,
+            url: `https://obscure-retreat-97028.herokuapp.com/api/getRestaurantsByLocation/${cityName}`,
             headers: { 'Content-Type': 'application/json' }
         }).then(result => {
             console.log(result);

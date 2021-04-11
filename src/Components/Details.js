@@ -18,7 +18,7 @@ class Details extends Component {
         const qs = queryString.parse(this.props.location.search);
         const { restaurant_id } = qs;
 
-        axios.get(`http://localhost:4050/api/getRestaurantsById/${restaurant_id}`)
+        axios.get(`https://obscure-retreat-97028.herokuapp.com/api/getRestaurantsById/${restaurant_id}`)
             .then(result => {
                 this.setState({
                     restaurantDetails: result.data.restaurant
@@ -70,7 +70,7 @@ class Details extends Component {
     getTokenFromBE = (data) => {
         console.log(JSON.stringify(data));
         // (2) Call the payment API in BE
-        return fetch(`http://localhost:4050/api/payment`, {
+        return fetch(`https://obscure-retreat-97028.herokuapp.com/api/payment`, {
             method: 'POST',
             headers: {
                 Accept: 'application/json',

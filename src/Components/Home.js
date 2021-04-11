@@ -20,7 +20,7 @@ class Home extends Component {
         // Make API calls using axios
 
         // (1) get the list of locations
-        axios.get('http://localhost:4050/api/getLocations')
+        axios.get('https://obscure-retreat-97028.herokuapp.com/api/getLocations')
             .then(result => {
                 this.setState({
                     cities: result.data.locations
@@ -31,7 +31,7 @@ class Home extends Component {
             });
 
         // (2) get the list of mealtypes
-        axios.get('http://localhost:4050/api/getMealTypes')
+        axios.get('https://obscure-retreat-97028.herokuapp.com/api/getMealTypes')
             .then(result => {
                 this.setState({
                     mealtypes: result.data.mealTypes

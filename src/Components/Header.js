@@ -73,7 +73,7 @@ class Header extends Component {
 
         axios({
             method: 'POST',
-            url: 'http://localhost:4050/api/userSignUp',
+            url: 'https://obscure-retreat-97028.herokuapp.com/api/userSignUp',
             headers: { 'Content-Type' : 'application/json' },
             data: req,
         }).then(result => {
@@ -105,7 +105,7 @@ class Header extends Component {
 
         axios({
             method: 'POST',
-            url: 'http://localhost:4050/api/userLogin',
+            url: 'https://obscure-retreat-97028.herokuapp.com/api/userLogin',
             headers: { 'Content-Type' : 'application/json' },
             data: req,
         }).then(result => {

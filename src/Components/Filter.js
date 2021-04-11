@@ -32,7 +32,7 @@ class Filter extends Component {
 
         axios({
             method: 'POST',
-            url: 'http://localhost:4050/api/getFilteredRestaurants',
+            url: 'https://obscure-retreat-97028.herokuapp.com/api/getFilteredRestaurants',
             headers: { 'Content-Type': 'application/json' },
             data: req
         }).then(response => {
@@ -44,7 +44,7 @@ class Filter extends Component {
             console.log(error);
         });
 
-        axios.get('http://localhost:4050/api/getLocations')
+        axios.get('https://obscure-retreat-97028.herokuapp.com/api/getLocations')
             .then(result => {
                 this.setState({
                     locationList: result.data.locations
